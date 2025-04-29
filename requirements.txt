@@ -1,1 +1,5 @@
+langchain
+chromadb
+InstructorEmbedding
+vertexai
 
