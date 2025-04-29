@@ -40,3 +40,10 @@ This project is a Generative AI Assistant designed to work with synthetic Engine
 
 ## Project Structure
 
+
+## Acknowledgements
+
+This project was inspired by the Google Generative AI Intensive Course and is part of a hands-on capstone project. All ECO documents are fictional and created for demonstration purposes only.
+
+---
+
