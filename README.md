@@ -145,9 +145,10 @@ of the concepts developed in the notebook.
 
 ### Project Structure
 
+```
 happymatrix-eco-assistant/
 ├── eco_assistant/             # Main package
-│   ├── init.py            # Package initialization
+│   ├── __init__.py            # Package initialization
 │   ├── assistant.py           # ECOAssistant class
 │   ├── utils.py               # Helper functions
 │   └── config.py              # Configuration settings
@@ -156,10 +157,6 @@ happymatrix-eco-assistant/
 ├── notebooks/                 # Jupyter notebooks
 │   └── ECO-assistant.ipynb    # Original development notebook
 ├── SYNT_DOCS/                 # Synthetic ECO documents
-│   ├── ECO-100001.txt         # Enclosure Update
-│   ├── ECO-100002.txt         # Battery Replacement
-│   ├── ECO-100003.txt         # Firmware Update
-│   └── ECO-100004.txt         # Wristband Material Change
 ├── tests/                     # Testing scripts
 │   └── verify_notebook_outputs.py  # Verification tests
 ├── .env.example               # Template for API key
@@ -168,7 +165,7 @@ happymatrix-eco-assistant/
 ├── requirements.txt           # Dependencies
 ├── setup.py                   # Package installation
 └── README.md                  # This file
-
+```
 
 ### About the Data
 
