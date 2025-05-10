@@ -1,0 +1,30 @@
+# Environment files
+.env
+*.env
+!.env.example
+
+# Vector store
+eco_chroma_db/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Output files
+eco_structured_results.csv
+eco_structured_results.json
+*_stakeholder_email.txt 
