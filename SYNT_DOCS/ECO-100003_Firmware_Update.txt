@@ -1,0 +1,28 @@
+
+Company: HappyMatrix
+Product: MatrixSync X100
+ECO Number: ECO-100003
+Title: Firmware Update – Step Tracking Accuracy Improvement
+Date Issued: 2025-04-15
+Prepared By: Olga Seymour 
+Status: Released
+
+=== Description of Change ===
+This ECO introduces a firmware update to improve the accuracy of the step tracking algorithm for the MatrixSync X100 fitness tracker. The update refines motion detection thresholds and incorporates updated accelerometer calibration data.
+
+=== Reason for Change ===
+User feedback and internal testing revealed inconsistencies in step count accuracy during brisk walking and slow jogging. The firmware improvement addresses these issues, improving reliability and user satisfaction.
+
+=== Impact Assessment ===
+- Mechanical: No impact.
+- Electrical: No impact.
+- Firmware: Firmware version updated from 3.1.2 to 3.2.0.
+- Packaging: Product labeling will reflect updated firmware version.
+
+=== Affected Parts ===
+- FW-000012 | MatrixSync X100 Firmware | Rev 3.1.2 → Rev 3.2.0
+- LAB-000014 | Product Label – MatrixSync X100 | Rev A → Rev B
+
+=== Effective Date ===
+2025-05-10
+        

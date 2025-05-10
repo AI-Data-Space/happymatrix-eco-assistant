@@ -1,0 +1,28 @@
+
+Company: HappyMatrix
+Product: MatrixSync X100
+ECO Number: ECO-100002
+Title: Battery Type Replacement – Lithium Polymer to Solid-State
+Date Issued: 2025-04-14
+Prepared By: Olga Seymour 
+Status: Released
+
+=== Description of Change ===
+This ECO details a change in the battery type used in the MatrixSync X100 fitness tracker, replacing the existing lithium-polymer cell with a solid-state lithium battery. Documentation and BOMs will be updated accordingly.
+
+=== Reason for Change ===
+Improve battery safety, increase product lifespan, and align with new supplier standards.
+
+=== Impact Assessment ===
+- Mechanical: Minor changes to battery compartment design.
+- Electrical: Slight voltage tolerance adjustment.
+- Firmware: No impact.
+- Packaging: Update battery specification on product box.
+
+=== Affected Parts ===
+- BAT-000011 | Battery – Li-Po | Rev A → Obsolete
+- BAT-000014 | Battery – Solid-State | New Part
+- BOM-000122 | MatrixSync X100 BOM | Updated battery component
+
+=== Effective Date ===
+2025-05-05 

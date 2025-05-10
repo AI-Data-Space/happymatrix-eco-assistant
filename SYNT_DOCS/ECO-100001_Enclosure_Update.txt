@@ -1,0 +1,28 @@
+
+Company: HappyMatrix
+Product: MatrixSync X100
+ECO Number: ECO-100001
+Title: Enclosure Update – Add Ventilation Slots
+Date Issued: 2025-04-13
+Prepared By: Olga Seymour
+Status: Released
+
+=== Description of Change ===
+This ECO proposes the addition of ventilation slots to the top shell of the enclosure.
+This modification involves updates to the injection molding tooling for the plastic component.
+
+=== Reason for Change ===
+Improve device thermal performance by enhancing passive airflow through the enclosure.
+
+=== Impact Assessment ===
+- Mechanical: Minor tooling update required. No changes to part fit or assembly sequence.
+- Electrical: No impact.
+- Firmware: No impact.
+- Packaging: No impact.
+
+=== Affected Parts ===
+- PRT-000210 | Enclosure Top Shell | Rev A → Rev B
+- PRT-000211 | Enclosure Bottom Shell | No Change
+
+=== Effective Date ===
+2025-05-01

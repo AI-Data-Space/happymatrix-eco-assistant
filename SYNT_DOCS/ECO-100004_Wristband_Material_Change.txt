@@ -1,0 +1,28 @@
+
+
+Company: HappyMatrix
+Product: MatrixSync X100
+ECO Number: ECO-100004
+Title: Wristband Material Change – Thermoplastic Polyurethane to Recycled Silicone
+Date Issued: 2025-04-13
+Prepared By: Olga Seymour    
+Status: Released
+
+=== Description of Change ===
+This ECO proposes changing the wristband material from thermoplastic polyurethane (TPU) to a more sustainable recycled silicone compound.
+The change involves updates to the part specification and supplier documentation.
+
+=== Reason for Change ===
+To improve environmental sustainability and reduce material cost without impacting product durability or comfort.
+
+=== Impact Assessment ===
+Mechanical: Supplier qualification required. Re-validation of tensile strength and wear resistance.
+Electrical: No impact.
+Firmware: No impact.
+Packaging: Update required to reflect new material labeling.
+
+=== Affected Parts ===
+- PRT-000310 | Wristband Assembly | Rev B → Rev C
+
+=== Effective Date ===
+2025-05-15             
