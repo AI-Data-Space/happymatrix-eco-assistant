@@ -93,13 +93,16 @@ This verification script runs a complete suite of tests that reproduces all outp
 
 ## Natural Language Q&A
 
+```
 Q: What change was made in ECO-100002 and why?
 A: In ECO-100002, the lithium-polymer battery in the MatrixSync X100 was 
    replaced with a solid-state battery. This was done to improve battery 
    safety, increase product lifespan, and align with new supplier standards.
+```
    
 ## Structured JSON Output
 
+```json
 {
   "ECO Number": "ECO-100002",
   "Title": "Battery Type Replacement – Lithium Polymer to Solid-State",
@@ -112,6 +115,7 @@ A: In ECO-100002, the lithium-polymer battery in the MatrixSync X100 was
   ],
   "Effective Date": "2025-05-05"
 }
+```
 
 ### ⚠️ API Rate Limits
 
