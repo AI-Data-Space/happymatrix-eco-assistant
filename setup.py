@@ -1,5 +1,9 @@
 """
 Setup script for the HappyMatrix ECO Assistant package.
+
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 from setuptools import setup, find_packages
