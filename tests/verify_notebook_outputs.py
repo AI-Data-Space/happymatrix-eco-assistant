@@ -150,7 +150,7 @@ def main():
         print(email)
         
         display_section_header("Verification Complete")
-        print("All tests completed. Compare outputs with the notebook.")
+        print("All tests completed.")
         
     except Exception as e:
         print(f"Error during verification: {e}")
