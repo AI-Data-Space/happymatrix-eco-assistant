@@ -7,8 +7,9 @@ load documents, and perform basic Q&A operations.
 Usage:
     python basic_demo.py
 
-Author: Olga Seymour 
-
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 import os
