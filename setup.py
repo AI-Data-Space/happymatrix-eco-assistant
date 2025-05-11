@@ -8,13 +8,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
+    # Basic package information
     name="eco-assistant",
     version="0.1.0",
     author="Olga Seymour",
+    
     description="A GenAI-powered Engineering Change Order Analysis Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    
     url="https://github.com/data-ai-studio/happymatrix-eco-assistant",  
+    
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
