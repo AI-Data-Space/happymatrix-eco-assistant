@@ -2,11 +2,8 @@
 
 A GenAI-powered tool for analyzing Engineering Change Orders.
 
-
-**Author:** Olga Seymour
-
-**Date:** May 2025
-
+**Author:** Olga SeymourOlga Seymour  
+**Date:** May 2025 
 **GitHub:** https://github.com/data-ai-studio/happymatrix-eco-assistant
 
 ## Project Overview
