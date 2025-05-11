@@ -14,7 +14,7 @@ A GenAI-powered tool for analyzing Engineering Change Orders.
 
 ## Project Overview
 
-The ECO Assistant demonstrates how Generative AI can assist engineers and program managers 
+The ECO Assistant demonstrates how Generative AI can assist engineers and product teams 
 in understanding and organizing Engineering Change Orders (ECOs). It uses Google's Gemini LLMs 
 combined with Retrieval-Augmented Generation (RAG) to extract, analyze, and communicate information 
 from unstructured ECO documents. 
@@ -66,11 +66,11 @@ GOOGLE_API_KEY=your_api_key_here
 
 ### Running the Demo
 
-Run the main demo script:
+Run the main demo (diver) script:
 
 python main.py
 
-This will demonstrate:
+This will demonstrate core functionality: 
 
 1. Loading and analyzing ECO documents
 2. Natural language Q&A
@@ -80,6 +80,16 @@ This will demonstrate:
 For more examples:
 
 python examples/basic_demo.py
+
+
+### 📁 Script Overview
+
+| File | Description |
+|------|-------------|
+| `main.py` | 🔹 **Primary driver script** — demonstrates core functionality of the ECO Assistant, including document loading, Q&A, structured output, and stakeholder email generation. |
+| `examples/basic_demo.py` | 🔸 Lightweight demonstration script — a simpler version of the main demo for quick testing or reference. |
+| `tests/verify_notebook_outputs.py` | ✅ Full verification script — ensures that the outputs from the structured Python code match those from the original Jupyter notebook. |
+| `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant with rich examples and documentation. |
 
 
 ### Testing
