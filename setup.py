@@ -1,9 +1,5 @@
 """
 Setup script for the HappyMatrix ECO Assistant package.
-
-Author: Olga Seymour
-Date: May 2025
-Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 from setuptools import setup, find_packages
@@ -13,16 +9,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     # Basic package information
-    name="eco-assistant",
+    name="happymatrix-eco-assistant",
     version="0.1.0",
     author="Olga Seymour",
-    
     description="A GenAI-powered Engineering Change Order Analysis Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    
     url="https://github.com/data-ai-studio/happymatrix-eco-assistant",  
-    
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
