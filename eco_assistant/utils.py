@@ -36,21 +36,23 @@ def load_and_tag_documents(folder_path):
     if not os.path.isdir(folder_path):
         raise NotADirectoryError(f"Path is not a directory: {folder_path}")
     
-    # Get all text files
+    # Find all text files - using glob pattern matching
     file_paths = glob.glob(os.path.join(folder_path, "*.txt"))
     
-    # Warn if no files found
+    # Warn if we don't find any docs - good for debugging 
     if not file_paths:
         print(f"Warning: No .txt files found in {folder_path}")
         print(f"Files in directory: {os.listdir(folder_path)}")
     
-    # Load and tag each document
+    # Load each doc and tag it with its ECO number
+    # This helps with retrieval context later
     documents = []
     for path in file_paths:
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
             filename = os.path.basename(path)
-            # Extract ECO number from filename
+            
+            # Pull ECO number from filename - assumes ECO-XXXXXX format
             eco_number = filename.split(".")[0] if "ECO-" in filename else "Unknown-ECO"
             tagged_content = f"ECO Number: {eco_number}\n\n{content}"
             documents.append(tagged_content)
@@ -74,7 +76,9 @@ def create_vector_db(documents, embedding_model, persist_dir):
     Returns:
         tuple: (ChromaDB instance, list of split documents)
     """
-    # Split docs into chunks for better semantic search
+    
+    # Split docs into manageable chunks for better embedding
+    # Using recursive splitter to respect natural text boundaries 
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=750,
         chunk_overlap=250
@@ -82,7 +86,8 @@ def create_vector_db(documents, embedding_model, persist_dir):
     docs = [Document(page_content=d) for d in documents]
     split_docs = text_splitter.split_documents(docs)
     
-    # Create vector db with embeddings
+    # Create Chroma vector DB from our doc chunks 
+    # This is where the magic happens for semantic search 
     db = Chroma.from_documents(
         documents=split_docs,
         embedding=embedding_model,
@@ -112,7 +117,7 @@ def call_with_retry(func, max_retries=3, base_delay=5):
         try:
             return func()
         except Exception as e:
-            # Check if it's a rate limit error
+            # Check specifically for rate limit errors 
             if "ResourceExhausted" in str(e) or "429" in str(e):
                 delay = base_delay * (2 ** attempt)
                 time.sleep(delay)
@@ -120,7 +125,7 @@ def call_with_retry(func, max_retries=3, base_delay=5):
                     print("Max retries reached. Please try again later.")
                     raise
             else:
-                # Different error, just raise it
+                # Not a rate limit - just pass through other errors 
                 raise
 
 
