@@ -78,13 +78,12 @@ class ECOAssistant:
         for vector representations. Handles errors if initialization fails.
         """
         try:
-            # Initialize the Gemini LLM
+            # Initialize the Gemini LLM. Create the main Gemini model instance  
             self.llm = ChatGoogleGenerativeAI(
                 model=self.config["model"],
                 google_api_key=self.api_key
-            )
-    
-            # Initialize the embedding model
+            )    
+            # Initialize the embedding model for vectors
             self.embedding = GoogleGenerativeAIEmbeddings(
                 model=self.config["embedding_model"],
                 google_api_key=self.api_key
@@ -240,15 +239,17 @@ class ECOAssistant:
             dict: Structured JSON with ECO fields
         """
         try:
-            # Get raw answer from QA chain
+            # Get raw answer from QA chain using our RAG query
             result = self.query(question)
     
             # Extract ECO number from question if not provided
+            # Using regex to find ECO-XXXXXX pattern 
             if not eco_number:
                 match = re.search(r"(ECO-\d+)", question)
                 eco_number = match.group(1) if match else "Unknown"
-    
-            # Format result as JSON using Gemini
+                
+            # Use Gemini to reformat as JSON
+            # This structured prompt helps ensure consistent output
             prompt = f"""
             You are an assistant converting ECO answers into structured JSON.
     
@@ -268,7 +269,7 @@ class ECOAssistant:
             response = call_with_retry(lambda: self.llm.invoke(prompt))
             output = response.content.strip()
     
-            # Remove markdown code block formatting if present
+            # Clean up any markdown formatting 
             if output.startswith("```json"):
                 output = output.replace("```json", "").replace("```", "").strip()
     
@@ -456,12 +457,12 @@ class ECOAssistant:
             
         Returns:
             str: Response in either JSON or natural language format
-        """
-        # Check if query mentions structured output or JSON
+        """   
+        # Look for keywords that suggest structured output preference 
         if "structured" in query.lower() or "json" in query.lower():
             return self.structured_tool(query)
         
-        # Default to natural language
+        # Default to plain language for better readability
         return self.qa_tool(query)
     
     def process_multiple_queries(self, queries, delay=10):
@@ -663,11 +664,11 @@ class ECOAssistant:
             # Validate ECO number format
             validate_eco_number(eco_number)
             
-            # Get ECO context
+            # Get ECO context from our vector DB 
             eco_query = f"What is the change described in {eco_number}? Extract details to create a stakeholder email."
             eco_context = call_with_retry(lambda: self.query(eco_query))["result"]
             
-            # Generate email with structured format
+            # Prompt for email generation with specific sections 
             email_prompt = f"""
             You are writing an internal stakeholder email summarizing an engineering change (ECO).
             
@@ -698,11 +699,17 @@ class ECOAssistant:
         Closes database connections to prevent resource leaks.
         """
         try:
-            if hasattr(self, 'db') and self.db is not None:
-                # Close ChromaDB connection if possible
-                if hasattr(self.db, '_client') and hasattr(self.db._client, 'close'):
-                    self.db._client.close()
-                    
-            print("\nResources cleaned up")
+            
+            # Only attempt cleanup if we have a database client
+            if self.db and hasattr(self.db, '_client'): 
+                client = self.db._client
+                # Close ChromaDB connection if the method exists 
+                if hasattr(client, 'close'):
+                    client.close()
+                    print("ChromaDB connection closed")
+
+            print("\nCleanup complete")
         except Exception as e:
-            print(f"Error during cleanup: {e}") 
+            print(f"Warning: Error during cleanup: {e}")
+                    
+            
