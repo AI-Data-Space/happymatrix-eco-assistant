@@ -4,6 +4,10 @@ Utility functions for the ECO Assistant.
 This module provides helper functions for loading documents,
 creating vector stores, handling API rate limits, and validating
 ECO numbers.
+
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 import os
