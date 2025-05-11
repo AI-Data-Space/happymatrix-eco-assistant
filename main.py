@@ -92,7 +92,7 @@ def run_demo():
         print(f"\nError in demo: {e}")
     
     finally:
-        # Always clean up resources
+        # Clean up resources
         assistant.cleanup()
 
 
