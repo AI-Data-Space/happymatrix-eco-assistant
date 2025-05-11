@@ -1,6 +1,10 @@
 """
 This script runs the key examples from the ECO Assistant notebook and displays the results
 to compare with the notebook outputs.
+
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 import os
