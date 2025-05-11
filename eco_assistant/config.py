@@ -4,6 +4,10 @@ Configuration settings for the ECO Assistant.
 This module defines default settings for the ECO Assistant,
 including model parameters, vector database settings, and
 retrieval options.
+
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant 
 """
 
 # Default configuration for ECO Assistant
