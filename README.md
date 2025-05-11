@@ -89,7 +89,7 @@ python examples/basic_demo.py
 | `main.py` | 🔹 **Primary driver script** — demonstrates core functionality of the ECO Assistant, including document loading, Q&A, structured output, and stakeholder email generation. |
 | `examples/basic_demo.py` | 🔸 Lightweight demonstration script — a simpler version of the main demo for quick testing or reference. |
 | `tests/verify_notebook_outputs.py` | ✅ Full verification script — ensures that the outputs from the structured Python code match those from the original Jupyter notebook. |
-| `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant with rich examples and documentation. |
+| `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant. |
 
 
 ### Testing
