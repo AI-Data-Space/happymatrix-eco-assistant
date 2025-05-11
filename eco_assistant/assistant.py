@@ -4,6 +4,10 @@ Main ECO Assistant module containing the ECOAssistant class.
 This module provides the core functionality for analyzing and extracting
 information from Engineering Change Order (ECO) documents using
 Google's Gemini models and LangChain.
+
+Author: Olga Seymour
+Date: May 2025
+Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
 """
 
 import json
