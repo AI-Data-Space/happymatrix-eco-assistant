@@ -35,7 +35,7 @@ def run_demo():
     
     print("API key loaded successfully.")
     
-    # Initialize ECO Assistant
+    # Create an instance of the ECOAssistant class with API key and config 
     print("\nInitializing ECO Assistant...") 
     assistant = ECOAssistant(api_key=api_key, config=CONFIG)
     
@@ -44,7 +44,7 @@ def run_demo():
         print("\nLoading ECO documents...")
         documents = assistant.load_documents("SYNT_DOCS")
         
-        # Create vector store
+        # Create vector store for semantic search 
         print("\nCreating vector database...")
         assistant.create_vector_store()
         
