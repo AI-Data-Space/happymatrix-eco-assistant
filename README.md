@@ -85,8 +85,8 @@ happymatrix-eco-assistant/
 
 ### Installation
 
-1. Clone this repository:   
-   ```bash
+1. Clone this repository:      
+```bash
 git clone https://github.com/AI-Data-Space/happymatrix-eco-assistant.git
 cd happymatrix-eco-assistant
    
