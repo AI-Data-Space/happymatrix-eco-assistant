@@ -185,6 +185,7 @@ To explore the development process:
    ```bash
    jupyter notebook notebooks/ECO-assistant.ipynb 
 
+
 ### About the Data
 
 All ECO documents are synthetic and created for educational purposes. They do not reflect any real products or proprietary information.
