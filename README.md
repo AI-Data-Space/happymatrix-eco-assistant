@@ -220,7 +220,7 @@ I've extended these concepts to create a specialized application for Engineering
 - Batch processing capabilities for multiple ECOs
 
 The course provided an excellent learning foundation that was then applied to this specialized domain to solve real-world engineering documentation challenges.
-All ECO documents are fictional and created for demonstration purposes only.
+All ECO documents are fictional and created for demonstration purposes only. 
 
 ---
 
