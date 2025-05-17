@@ -47,7 +47,7 @@ from unstructured ECO documents.
 
 1. Clone this repository:
    
-   git clone https://github.com/data-ai-studio/happymatrix-eco-assistant.git
+   git clone https://github.com/AI-Data-Space/happymatrix-eco-assistant.git      
    cd happymatrix-eco-assistant
    
 2. Create a virtual environment:
