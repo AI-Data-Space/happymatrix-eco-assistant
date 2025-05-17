@@ -182,8 +182,8 @@ for how the project was created. The packaged Python code in this repository is 
 of the concepts developed in the notebook.            
 
 To explore the development process:
-```bash
-jupyter notebook notebooks/ECO-assistant.ipynb 
+   ```bash
+   jupyter notebook notebooks/ECO-assistant.ipynb 
 
 ### About the Data
 
