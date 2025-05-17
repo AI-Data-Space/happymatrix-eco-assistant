@@ -9,7 +9,7 @@ A GenAI-powered tool for analyzing Engineering Change Orders.
 
 **Date:** May 2025
 
-**GitHub:** https://github.com/data-ai-studio/happymatrix-eco-assistant
+**GitHub:** https://github.com/AI-Data-Space/happymatrix-eco-assistant 
 
 
 ## Project Overview
@@ -88,25 +88,7 @@ python examples/basic_demo.py
 |------|-------------|
 | `main.py` | 🔹 **Primary driver script** — demonstrates core functionality of the ECO Assistant, including document loading, Q&A, structured output, and stakeholder email generation. |
 | `examples/basic_demo.py` | 🔸 Lightweight demonstration script — a simpler version of the main demo for quick testing or reference. |
-| `tests/verify_notebook_outputs.py` | ✅ Full verification script — ensures that the outputs from the structured Python code match those from the original Jupyter notebook. |
 | `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant. |
-
-
-### Testing
-
-The project includes comprehensive testing to ensure it matches the original Jupyter notebook implementation:
-
-python tests/verify_notebook_outputs.py
-
-This verification script runs a complete suite of tests that reproduces all outputs from the original notebook, including:
-
-- Document loading
-- Vector storage
-- Query processing
-- Structured output generation
-- Batch processing
-- Agent routing
-- Response evaluation
 
 
 ### Example Outputs
@@ -180,9 +162,7 @@ happymatrix-eco-assistant/
 │   └── basic_demo.py          # Simple demo
 ├── notebooks/                 # Jupyter notebooks
 │   └── ECO-assistant.ipynb    # Original development notebook
-├── SYNT_DOCS/                 # Synthetic ECO documents
-├── tests/                     # Testing scripts
-│   └── verify_notebook_outputs.py  # Verification tests
+├── SYNT_DOCS/                 # Synthetic ECO documents             
 ├── .env.example               # Template for API key
 ├── .gitignore                 # Git ignore file
 ├── main.py                    # Main demo script
@@ -201,7 +181,22 @@ Olga Seymour
 
 ## Acknowledgements
 
-This project was inspired by the Google Generative AI Intensive Course and is part of a hands-on capstone project. All ECO documents are fictional and created for demonstration purposes only.
+This project builds upon foundation concepts and patterns learned from the Google Generative AI with Gemini API course on Kaggle. Specifically, the following implementation patterns were adapted from the course labs:
+
+- Basic Gemini API integration and configuration
+- RAG implementation framework using ChromaDB vector storage
+- Few-shot prompting techniques for consistent extraction
+- Structured output generation using LangChain
+
+I've extended these concepts to create a specialized application for Engineering Change Order (ECO) processing, adding:
+- Domain-specific prompting for ECO document understanding
+- Comprehensive error handling and rate limit management
+- Structured data extraction pipeline for ECO metadata
+- Email generation for stakeholder communications
+- Batch processing capabilities for multiple ECOs
+
+The course provided an excellent learning foundation that was then applied to this specialized domain to solve real-world engineering documentation challenges.
+All ECO documents are fictional and created for demonstration purposes only.
 
 ---
 
