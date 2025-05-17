@@ -104,6 +104,11 @@ happymatrix-eco-assistant/
    ```bash
    GOOGLE_API_KEY=your_api_key_here
 
+### API Key Security
+
+⚠️ **IMPORTANT**: Never commit your `.env` file with your actual API key to version control. 
+The `.env` file is listed in `.gitignore` and should remain private to your local development environment.
+
 ### Running the Demo
 
 Run the main demo script:
