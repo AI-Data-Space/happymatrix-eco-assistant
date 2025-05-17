@@ -186,9 +186,18 @@ To explore the development process:
    jupyter notebook notebooks/ECO-assistant.ipynb 
 
 
-### About the Data
+## About the Data
 
-All ECO documents are synthetic and created for educational purposes. They do not reflect any real products or proprietary information.
+All ECO documents included in this project are synthetic and were created solely for educational purposes. The documents are located in the `SYNT_DOCS` folder and represent fictional engineering change orders for the "MatrixSync X100" fitness tracker - a product that doesn't exist.
+
+These synthetic documents demonstrate common patterns found in engineering change management but do not reflect any real products, companies, or proprietary information. They showcase various types of engineering changes including:
+
+- Hardware modifications
+- Component replacements
+- Material changes
+- Firmware updates
+
+The synthetic nature of these documents makes this project suitable for educational use without concerns about intellectual property or confidential information.
 
 ### Author
 Olga Seymour
