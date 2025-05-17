@@ -66,7 +66,7 @@ GOOGLE_API_KEY=your_api_key_here
 
 ### Running the Demo
 
-Run the main demo (diver) script:
+Run the main demo script:
 
 python main.py
 
