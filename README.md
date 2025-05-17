@@ -91,9 +91,9 @@ happymatrix-eco-assistant/
    cd happymatrix-eco-assistant
    
 2. Create a virtual environment:
-
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 3. Install the package and dependencies:
    ```bash
@@ -101,8 +101,8 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    pip install -e .
 
 4. Create a .env file with your Google Gemini API key:
-
-GOOGLE_API_KEY=your_api_key_here
+   ```bash
+   GOOGLE_API_KEY=your_api_key_here
 
 ### Running the Demo
 
