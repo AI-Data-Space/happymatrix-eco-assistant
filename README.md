@@ -85,20 +85,20 @@ happymatrix-eco-assistant/
 
 ### Installation
 
-1. Clone this repository:
-   
-   git clone https://github.com/AI-Data-Space/happymatrix-eco-assistant.git      
-   cd happymatrix-eco-assistant
+1. Clone this repository:   
+   ```bash
+git clone https://github.com/AI-Data-Space/happymatrix-eco-assistant.git
+cd happymatrix-eco-assistant
    
 2. Create a virtual environment:
 
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-3. Install the package and dependencies: 
-
-pip install -r requirements.txt
-pip install -e .
+3. Install the package and dependencies:
+   ```bash
+   pip install -r requirements.txt
+   pip install -e .
 
 4. Create a .env file with your Google Gemini API key:
 
@@ -123,6 +123,7 @@ python examples/basic_demo.py
 
 
 ### Example Outputs
+Here are examples of what you can expect when running the assistant:
 
 ## Natural Language Q&A
 
@@ -180,6 +181,9 @@ I've included the original notebook in this repository to show my development pr
 for how the project was created. The packaged Python code in this repository is a refined, production-ready implementation 
 of the concepts developed in the notebook.            
 
+To explore the development process:
+```bash
+jupyter notebook notebooks/ECO-assistant.ipynb 
 
 ### About the Data
 
