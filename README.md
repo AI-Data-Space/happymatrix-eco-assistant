@@ -36,6 +36,46 @@ from unstructured ECO documents.
 - **ChromaDB** - Vector database for semantic search
 - **Python** - Implementation language
 
+### Project Structure
+
+```
+happymatrix-eco-assistant/
+├── eco_assistant/             # Main package
+│   ├── __init__.py            # Package initialization
+│   ├── assistant.py           # ECOAssistant class
+│   ├── utils.py               # Helper functions
+│   └── config.py              # Configuration settings
+├── examples/                  # Example scripts
+│   └── basic_demo.py          # Simple demo
+├── notebooks/                 # Jupyter notebooks
+│   └── ECO-assistant.ipynb    # Original development notebook
+├── SYNT_DOCS/                 # Synthetic ECO documents             
+├── .env.example               # Template for API key
+├── .gitignore                 # Git ignore file
+├── main.py                    # Main demo script
+├── requirements.txt           # Dependencies
+├── setup.py                   # Package installation
+└── README.md                  # This file
+```
+
+
+### 📁 Script Overview
+
+| File | Description |
+|------|-------------|
+| `main.py` | 🔹 Primary demo script — runs a quick demonstration of the ECO Assistant's core capabilities, including document loading, simple Q&A, structured JSON output, and stakeholder email generation. |
+| `eco_assistant/__init__.py` | Package initialization — defines package version, imports, and author information. |
+| `eco_assistant/assistant.py` | ECOAssistant class — core implementation containing all functionality for analyzing Engineering Change Orders using RAG and Gemini. |
+| `eco_assistant/utils.py` | Helper functions — utilities for document loading, vector database management, and API retry logic. |
+| `eco_assistant/config.py` | Configuration settings — default parameters for models, chunking, and retrieval options. |
+| `examples/basic_demo.py` | 🔸 Lightweight demonstration script — a simpler version of the main demo focused on basic Q&A and document loading, with more explicit path handling. |
+| `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant with detailed explanations and output examples. |
+| `setup.py` | Package installation — configures package metadata and dependencies for installation. |
+| `requirements.txt` | Dependencies — lists all required Python packages needed to run the assistant. |
+| `.env.example` | API key template — shows how to structure the API key environment variables. |
+| `README.md` | Project documentation — provides overview, installation instructions, and usage examples. |
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -80,15 +120,6 @@ This will demonstrate core functionality:
 For more examples:
 
 python examples/basic_demo.py
-
-
-### 📁 Script Overview
-
-| File | Description |
-|------|-------------|
-| `main.py` | 🔹 **Primary driver script** — demonstrates core functionality of the ECO Assistant, including document loading, Q&A, structured output, and stakeholder email generation. |
-| `examples/basic_demo.py` | 🔸 Lightweight demonstration script — a simpler version of the main demo for quick testing or reference. |
-| `notebooks/ECO-assistant.ipynb` | 🧠 Original development notebook — shows the exploratory and step-by-step creation of the ECO Assistant. |
 
 
 ### Example Outputs
@@ -149,27 +180,6 @@ I've included the original notebook in this repository to show my development pr
 for how the project was created. The packaged Python code in this repository is a refined, production-ready implementation 
 of the concepts developed in the notebook.            
 
-### Project Structure
-
-```
-happymatrix-eco-assistant/
-├── eco_assistant/             # Main package
-│   ├── __init__.py            # Package initialization
-│   ├── assistant.py           # ECOAssistant class
-│   ├── utils.py               # Helper functions
-│   └── config.py              # Configuration settings
-├── examples/                  # Example scripts
-│   └── basic_demo.py          # Simple demo
-├── notebooks/                 # Jupyter notebooks
-│   └── ECO-assistant.ipynb    # Original development notebook
-├── SYNT_DOCS/                 # Synthetic ECO documents             
-├── .env.example               # Template for API key
-├── .gitignore                 # Git ignore file
-├── main.py                    # Main demo script
-├── requirements.txt           # Dependencies
-├── setup.py                   # Package installation
-└── README.md                  # This file
-```
 
 ### About the Data
 
