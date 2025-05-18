@@ -274,10 +274,14 @@ All ECO documents are fictional and created for demonstration purposes only.
 ## Citation
 
 If you use this project in your work, please cite it as: 
-@software{seymour2025happymatrix,
+@software{olga_seymour_2025_happymatrix,
 author = {Seymour, Olga},
 title = {HappyMatrix ECO Assistant: A GenAI-powered Engineering Change Order Analysis Tool},
 year = {2025},
-url = {https://github.com/AI-Data-Space/happymatrix-eco-assistant}
+version = {1.0.0},
+publisher = {GitHub},
+journal = {GitHub repository},
+url = {https://github.com/AI-Data-Space/happymatrix-eco-assistant},
+doi = {10.5281/zenodo.example}  // Remove this line if you don't have a DOI
 }
 
