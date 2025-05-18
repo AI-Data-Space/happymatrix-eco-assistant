@@ -49,6 +49,19 @@ This assistant demonstrates how GenAI can transform unstructured ECO documents i
 - **ChromaDB** - Vector database for semantic search
 - **Python** - Implementation language
 
+## Technical Architecture
+
+The ECO Assistant uses a multi-stage pipeline:
+
+1. **Document Processing**: ECO documents are loaded, tagged with their identifiers, and split into chunks
+2. **Vector Embedding**: Text chunks are converted to vector embeddings using Gemini's embedding model
+3. **Semantic Search**: ChromaDB enables retrieval of the most relevant document chunks for each query
+4. **Context-Enhanced Generation**: Retrieved context is sent to Gemini along with the query and few-shot examples
+5. **Format Control**: Outputs are processed into either natural language or structured JSON based on user preference
+
+This Retrieval-Augmented Generation (RAG) approach grounds all responses in the actual ECO document content, ensuring accuracy while leveraging Gemini's language capabilities.
+
+
 ### Project Structure
 
 ```
@@ -257,4 +270,14 @@ The course provided an excellent learning foundation that was then applied to th
 All ECO documents are fictional and created for demonstration purposes only. 
 
 ---
+
+## Citation
+
+If you use this project in your work, please cite it as: 
+@software{seymour2025happymatrix,
+author = {Seymour, Olga},
+title = {HappyMatrix ECO Assistant: A GenAI-powered Engineering Change Order Analysis Tool},
+year = {2025},
+url = {https://github.com/AI-Data-Space/happymatrix-eco-assistant}
+}
 
