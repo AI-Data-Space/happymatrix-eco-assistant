@@ -19,6 +19,15 @@ in understanding and organizing Engineering Change Orders (ECOs). It uses Google
 combined with Retrieval-Augmented Generation (RAG) to extract, analyze, and communicate information 
 from unstructured ECO documents. 
 
+### Why This Matters
+Engineering Change Orders are critical documents in product development that are often:
+- Time-consuming to analyze manually
+- Inconsistent in format and structure
+- Difficult to integrate into downstream systems
+
+This assistant demonstrates how GenAI can transform unstructured ECO documents into actionable insights and structured data, saving engineering teams valuable time and improving decision-making.
+
+
 ## Features
 
 - **Natural Language Q&A**: Query documents using plain language
