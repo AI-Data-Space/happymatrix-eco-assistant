@@ -202,17 +202,20 @@ A: In ECO-100002, the lithium-polymer battery in the MatrixSync X100 was
 
 This project uses the Google Gemini API which has usage limits on the free tier. The code includes built-in handling for rate limits, including:
 
-- Automatic retries with exponential backoff
-- User-friendly error messages
-- Strategic delays between API calls
+* Automatic retries with exponential backoff
+* User-friendly error messages 
+* Strategic delays between API calls
 
 If you encounter persistent rate limit errors when running examples:
 
 1. Wait a few minutes before trying again
 2. Run fewer operations in succession
-3. Consider a paid API tier for higher limits
+3. Run only a subset of ECOs in batch processing examples
+4. Consider a paid API tier for higher limits
 
-These limitations are standard when working with AI APIs and demonstrate real-world API integration practices.
+These limitations are standard when working with AI APIs and demonstrate real-world API integration practices. The notebook is designed to handle these limitations gracefully while still showing the full capability of the assistant.
+
+> **Note**: If you plan to use this code in production, implementing a caching layer for embeddings and responses would significantly reduce API calls and improve performance.
 
 
 ## Jupyter Notebook
