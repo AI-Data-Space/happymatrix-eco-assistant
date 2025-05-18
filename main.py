@@ -6,7 +6,7 @@ a GenAI-powered tool for analyzing Engineering Change Orders.
 
 Author: Olga Seymour
 Date: May 2025
-Github: https://github.com/data-ai-studio/happymatrix-eco-assistant
+Github: https://github.com/AI-Data-Space/happymatrix-eco-assistant
 """
 
 import os
@@ -43,7 +43,9 @@ def run_demo():
     try:
         # Load ECO documents
         print("\nLoading ECO documents...")
-        documents = assistant.load_documents("SYNT_DOCS")
+        project_root = os.path.dirname(os.path.abspath(__file__))
+        synt_docs_path = os.path.join(project_root, "SYNT_DOCS")
+        documents = assistant.load_documents(synt_docs_path)
         
         # Create vector store for semantic search 
         print("\nCreating vector database...")
@@ -76,7 +78,7 @@ def run_demo():
             "Extract details from ECO-100001"
         )
         print("\nStructured JSON result:")
-        print(json.dumps(structured_result, indent=2))
+        print(json.dumps(structured_result, indent=2, ensure_ascii=False))
         
         # Demo 3: Generate Stakeholder Email
         print("\n\n===== DEMO 3: Stakeholder Email Generation =====")
