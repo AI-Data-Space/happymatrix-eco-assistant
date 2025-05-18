@@ -363,7 +363,7 @@ class ECOAssistant:
         start_time = time.time()
         print(f"Starting batch processing at {time.strftime('%H:%M:%S')}")
 
-        # Process each ECO - added tracking to report completion %
+        # Process each ECO - tracking to report completion %
         for i, eco in enumerate(eco_numbers):
             print(f"\n[{i + 1}/{len(eco_numbers)}] Processing {eco}...")
 
