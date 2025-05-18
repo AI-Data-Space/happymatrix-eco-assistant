@@ -14,7 +14,7 @@ setup(
     description="A GenAI-powered Engineering Change Order Analysis Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/data-ai-studio/happymatrix-eco-assistant",  
+    url="https://github.com/AI-Data-Space/happymatrix-eco-assistant",  
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
