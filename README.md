@@ -141,18 +141,18 @@ python examples/basic_demo.py
 
 ## Quick Start
 ```python
-from eco_assistant import ECOAssistant
+   from eco_assistant import ECOAssistant
 
-# Initialize with your API key
-assistant = ECOAssistant(api_key="your-api-key")
+   # Initialize with your API key
+   assistant = ECOAssistant(api_key="your-api-key")
 
-# Load documents
-assistant.load_documents("path/to/docs")
-assistant.create_vector_store()
+   # Load documents
+   assistant.load_documents("path/to/docs")
+   assistant.create_vector_store()
 
-# Ask a question
-result = assistant.query("What change was made in ECO-100002?")
-print(result["result"])
+   # Ask a question
+   result = assistant.query("What change was made in ECO-100002?")
+   print(result["result"])
 
 
 ### Example Outputs
