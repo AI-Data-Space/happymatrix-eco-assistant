@@ -77,11 +77,11 @@ happymatrix-eco-assistant/
 │   └── ECO-assistant.ipynb    # Original development notebook
 ├── SYNT_DOCS/                 # Synthetic ECO documents             
 ├── .env.example               # Template for API key
-├── .gitignore                 # Git ignore file
+├── .gitignore                 
 ├── main.py                    # Main demo script
 ├── requirements.txt           # Dependencies
 ├── setup.py                   # Package installation
-└── README.md                  # This file
+└── README.md                  # # Project documentation
 ```
 
 
