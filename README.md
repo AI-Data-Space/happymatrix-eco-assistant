@@ -81,7 +81,7 @@ happymatrix-eco-assistant/
 ├── main.py                    # Main demo script
 ├── requirements.txt           # Dependencies
 ├── setup.py                   # Package installation
-└── README.md                  # # Project documentation
+└── README.md                  # Project documentation
 ```
 
 
