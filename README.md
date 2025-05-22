@@ -274,4 +274,21 @@ All ECO documents are fictional and created for demonstration purposes only.
 
 ---
 
+## Licensing
+
+### Code
+
+All source code in this repository is licensed under the [MIT License](LICENSE).
+
+### Dataset
+
+The dataset located in the `SYNT_DOCS/` folder is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.  
+- **NonCommercial** — You may not use the dataset for commercial purposes.
+
+> This license applies only to the contents of the `SYNT_DOCS/` directory.
+
 
