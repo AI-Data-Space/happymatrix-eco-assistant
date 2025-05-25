@@ -7,6 +7,12 @@
 A GenAI-powered tool for analyzing Engineering Change Orders.
 
 
+**Author:** Olga Seymour
+
+**Date:** May 2025
+
+**GitHub:** https://github.com/AI-Data-Space/happymatrix-eco-assistant 
+
 ## Project Overview
 
 The ECO Assistant demonstrates how Generative AI can assist engineers and product teams 
@@ -261,12 +267,6 @@ The course provided an excellent learning foundation that was then applied to th
 All ECO documents are fictional and created for demonstration purposes only. 
 
 ---
-
-**Author:** Olga Seymour
-
-**Date:** May 2025
-
-**GitHub:** https://github.com/AI-Data-Space/happymatrix-eco-assistant 
 
 ## Licensing
 
